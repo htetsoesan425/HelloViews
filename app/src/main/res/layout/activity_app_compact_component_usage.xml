@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppCompactComponentUsageActivity">
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/tvAppCompact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="First Activity"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAppCompact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppCompact"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/purple_200"
+        android:text="AppCompact Button"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAppCompact"
+        android:layout_centerInParent="true"
+        android:hint="Please enter your name" />
+
+</RelativeLayout>
